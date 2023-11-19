@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagens/Netflix_icon.ico" type="image/x-icon">
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        body{
+            margin: 0px;
+        }
+        h1{
+            font-family: 'Oswald', sans-serif;
+            color: white;
+            margin: 0px 66px 0px 0px;
+            display: inline;
+            font-weight: 500;
+            margin-inline-start: 20px;
+            transition: 0.3s;
+        }
+        header{
+            width: auto;
+            height: 50px;
+            background-color: black;
+
+        }
+        #icone{
+            height: auto;
+            padding: 10px 0px 0px 10px;
+        }
+        a{
+            color: white;
+            display: inline;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+            text-decoration: none; /* Alteração aqui */
+        }
+        nav{
+            display: inline;
+            margin: 10px 20px;
+        }
+        h1:hover{
+            color: gray;
+        }
+        footer{
+            background-color: black;
+            width: auto;
+            height: 50px;
+        }
+        p{
+            width: auto;
+            height: 50px;
+            margin: 0px;
+            color: white;
+            display: inline;
+            font-family: 'Oswald', sans-serif;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png" alt="Ícone Netflix" width="30px" id="icone">
+        <h1>NETFLIX</h1>
+        <nav class="Cantinho-direito">
+            <a href="#series">Séries</a>
+            <a href="#filmes">Filmes</a>
+            <a href="#desenhos">Desenhos</a>
+        </nav>
+    </header>
+
+    <main class="interface">
+        <section class="page1">
+                <h1 id="filmes" onclick="listarFilmes()">Filmes</h1>
+                <div class="filme"><img src="https://upload.wikimedia.org/wikipedia/pt/0/06/Bird_Box_-_filme_p%C3%B4ster.jpeg" alt="Imagem 1"  width=""></div>
+                <div class="filme"><img src="https://cdn.2rscms.com.br/uploads/2080/colunas/marina-moia/2020/marco/27/o-poco.jpg" alt="Imagem 2" width="274px"></div>
+                <div class="filme"><img src="https://br.web.img2.acsta.net/pictures/18/05/04/15/03/2133793.jpg" alt="Imagem 3" width="258px"></div>
+            
+        </section>
+        <section class="page2">
+            <h1 id="series" onclick="listarSeries()">Séries</h1> 
+            <div class="filme"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/b8/13_Reasons_Why_Temporada_1_Poster.jpg/230px-13_Reasons_Why_Temporada_1_Poster.jpg" alt="Imagem 1" ></div>
+            <div class="filme"><img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2022/08/19/938170423-heartbreak-high-poster-art.jpg" alt="Imagem 2" width="275px"></div>
+            <div class="filme"><img src="https://m.media-amazon.com/images/M/MV5BYmU5N2YzYjQtM2Q4Yi00NWY4LWI5NDQtMzE4OTlhY2Q5NmJlXkEyXkFqcGdeQXVyMTMxNjUyMDkx._V1_FMjpg_UX1000_.jpg"Imagem 3" width="230px"></div>
+
+        </section>
+        <section class="page3" onclick="listarDesenhos()">
+            <h1 id="desenhos">Desenhos</h1>
+            <div class="desenhos"><img src="https://pipocamoderna.com.br/storage/2023/06/nimonastills11.jpg" alt="Imagem 1" width="300px"></div>
+            <div class="desenhos"><img src="https://images.justwatch.com/poster/133829143/s332/temporada-1"width="250px"></div>
+            <div class="desenhos"><img src="https://br.web.img3.acsta.net/pictures/18/08/28/22/21/4434220.jpg" alt="Imagem 3" width="180px"></div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Caio</p>
+    </footer>
+</body>
+</html>

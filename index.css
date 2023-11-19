@@ -1,0 +1,37 @@
+.page1{
+    background-color: #000;
+}
+.page2{
+    background-color: #E50914;
+}
+.page3{
+    background-color: #B20710;
+}
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.image {
+    flex: 0 0 100%; /* Largura das imagens */
+    margin: auto;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform(0.3s);
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
